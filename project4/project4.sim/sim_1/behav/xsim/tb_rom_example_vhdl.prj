@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../project4.srcs/sources_1/imports/chapter5_starters/sticky_counter.vhd" \
-"../../../../project4.srcs/sim_1/imports/ROM-testbank/ROM_tb.vhd" \
-
-# Do not sort compile order
-nosort
