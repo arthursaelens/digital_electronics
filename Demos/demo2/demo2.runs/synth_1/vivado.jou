@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Nov  7 00:30:19 2024
+# Process ID: 13640
+# Current directory: C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.runs/synth_1
+# Command line: vivado.exe -log display_encoder_board.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source display_encoder_board.tcl
+# Log file: C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.runs/synth_1/display_encoder_board.vds
+# Journal file: C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.runs/synth_1\vivado.jou
+# Running On        :saelens
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :12th Gen Intel(R) Core(TM) i7-1255U
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:10
+# CPU Logical cores :12
+# Host memory       :16850 MB
+# Swap memory       :12371 MB
+# Total Virtual     :29221 MB
+# Available Virtual :3470 MB
+#-----------------------------------------------------------
+source display_encoder_board.tcl -notrace

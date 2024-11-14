@@ -1,0 +1,23 @@
+Time resolution is 1 ps
+# Test patterns for addsub_board.vhd 
+# signal order: sw(8 downto 0) led(5 downto 0)
+# NOTE: test vector file for combinational module
+# 000000000 000000
+#1 (optellen res 0) a = 0 b = 0 optellen --> dataout = 00000 singout = 0
+Test OK for test input: 100000000,  (output=000000, desired output=000000)
+#2 (optellen res > 0) 1 + 1 = (data)00010 (sign) 0 
+Test OK for test input: 100010001,  (output=000010, desired output=000010)
+#3 (aftrekken res 0) 1 - 1 = 0
+Test OK for test input: 000010001,  (output=000000, desired output=000000)
+#4 aftrekken res > 0 aka 1e groter dan 2e) 2-1 = 1
+Test OK for test input: 000100001,  (output=000001, desired output=000001)
+#5 aftrekken res <0 (aka 2e waarde groter dan eerste) : 1-2 = -1
+Test OK for test input: 000010010,  (output=100001, desired output=100001)
+#optelling met overflow (opgevangen door langere outdata) : 1 + 15 = 16
+Test OK for test input: 100011111,  (output=010000, desired output=010000)
+
+6 test patterns run, 0 error(s) detected
+
+Failure: This is not a failure: all tests completed
+Time: 260 ns  Iteration: 0  Process: /ROM_tb_addsub/line__95  File: C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/addsub/addsub.srcs/sim_1/imports/ROM-testbank/ROM_tb_addsub.vhd
+$finish called at time : 260 ns : File "C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/addsub/addsub.srcs/sim_1/imports/ROM-testbank/ROM_tb_addsub.vhd" Line 115

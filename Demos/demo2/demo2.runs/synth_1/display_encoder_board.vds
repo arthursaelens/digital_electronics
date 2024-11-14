@@ -1,0 +1,281 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Nov  7 00:30:19 2024
+# Process ID: 13640
+# Current directory: C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.runs/synth_1
+# Command line: vivado.exe -log display_encoder_board.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source display_encoder_board.tcl
+# Log file: C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.runs/synth_1/display_encoder_board.vds
+# Journal file: C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.runs/synth_1\vivado.jou
+# Running On        :saelens
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :12th Gen Intel(R) Core(TM) i7-1255U
+# CPU Frequency     :2611 MHz
+# CPU Physical cores:10
+# CPU Logical cores :12
+# Host memory       :16850 MB
+# Swap memory       :12371 MB
+# Total Virtual     :29221 MB
+# Available Virtual :3470 MB
+#-----------------------------------------------------------
+source display_encoder_board.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 488.012 ; gain = 202.469
+Command: synth_design -top display_encoder_board -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 30960
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1335.078 ; gain = 446.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'display_encoder_board' [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/sources_1/imports/chapter4/display_encoder_board.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'display_encoder' [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/sources_1/imports/Practicum 1/display_encoder.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'bintobcd' [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/sources_1/imports/Practicum 1/bintobcd.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'bintobcd' (0#1) [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/sources_1/imports/Practicum 1/bintobcd.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'bcdtoseg' [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/sources_1/imports/Practicum 1/bcdtoseg.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'bcdtoseg' (0#1) [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/sources_1/imports/Practicum 1/bcdtoseg.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'display_encoder' (0#1) [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/sources_1/imports/Practicum 1/display_encoder.vhd:12]
+INFO: [Synth 8-226] default block is never used [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/sources_1/imports/chapter4/display_encoder_board.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'display_encoder_board' (0#1) [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/sources_1/imports/chapter4/display_encoder_board.vhd:14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1445.121 ; gain = 556.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1445.121 ; gain = 556.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1445.121 ; gain = 556.199
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1445.121 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/display_encoder_board_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/display_encoder_board_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1449.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1449.805 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1449.805 ; gain = 560.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1449.805 ; gain = 560.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1449.805 ; gain = 560.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1449.805 ; gain = 560.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---Muxes : 
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1449.805 ; gain = 560.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1449.805 ; gain = 560.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1449.805 ; gain = 560.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1449.805 ; gain = 560.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1462.484 ; gain = 573.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1462.484 ; gain = 573.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1462.484 ; gain = 573.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1462.484 ; gain = 573.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1462.484 ; gain = 573.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1462.484 ; gain = 573.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     1|
+|2     |LUT3 |     1|
+|3     |LUT4 |     8|
+|4     |LUT6 |     8|
+|5     |IBUF |     8|
+|6     |OBUF |    11|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1462.484 ; gain = 573.562
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 1462.484 ; gain = 568.879
+Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1462.484 ; gain = 573.562
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1467.379 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1471.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: e13f7bab
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 17 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:24 . Memory (MB): peak = 1471.062 ; gain = 983.051
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1471.062 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.runs/synth_1/display_encoder_board.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file display_encoder_board_utilization_synth.rpt -pb display_encoder_board_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  7 00:30:51 2024...

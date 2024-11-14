@@ -1,0 +1,26 @@
+Time resolution is 1 ps
+# Test patterns for sticky_counter.vhd (2-bit woorden)
+# input format: reset cnt_up cnt_dwn data_out
+# NOTE: test vector file for sequential module (no skips)!
+# Reset high, cnt_up = '0' , cnt_dwn = '0' 
+Test OK for test input: 1, 0, 0 (output=00, desired output=00)
+Test OK for test input: 0, 0, 0 (output=00, desired output=00)
+Test OK for test input: 0, 1, 0 (output=00, desired output=00)
+Test OK for test input: 0, 1, 0 (output=01, desired output=01)
+Test OK for test input: 0, 1, 0 (output=10, desired output=10)
+Test OK for test input: 0, 1, 0 (output=11, desired output=11)
+Test OK for test input: 0, 1, 1 (output=11, desired output=11)
+Test OK for test input: 0, 0, 1 (output=11, desired output=11)
+Test OK for test input: 0, 0, 1 (output=10, desired output=10)
+Test OK for test input: 0, 0, 1 (output=01, desired output=01)
+Test OK for test input: 0, 0, 1 (output=00, desired output=00)
+Test OK for test input: 0, 1, 1 (output=00, desired output=00)
+Test OK for test input: 0, 1, 1 (output=01, desired output=01)
+Test OK for test input: 1, 1, 1 (output=00, desired output=00)
+Test OK for test input: 1, 1, 1 (output=00, desired output=00)
+
+15 test patterns run, 0 error(s) detected
+
+Failure: This is not a failure: all tests completed
+Time: 440 ns  Iteration: 0  Process: /tb_rom_example/line__100  File: C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/project4/project4.srcs/sim_1/imports/ROM-testbank/ROM_tb.vhd
+$finish called at time : 440 ns : File "C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/project4/project4.srcs/sim_1/imports/ROM-testbank/ROM_tb.vhd" Line 120

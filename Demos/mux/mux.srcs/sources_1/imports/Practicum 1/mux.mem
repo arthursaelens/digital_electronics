@@ -1,0 +1,19 @@
+# Test patterns for mux.vhd 
+# USE CASE WITH N=8!!
+# signal order: data_in0 data_in1 select_data data_out
+# NOTE: test vector file for combinational module
+# 00000000 00000001 0 00000000
+# Test 1: Begin met data_in0 geselecteerd, controleer de outputVerwacht data_out = data_in0
+01 00 0 01
+# test 2: verander data_in0 terwijl select_data zelfde (=0)  verwacht data_out = data_in0
+11 00 0 11
+# 3 slect data verandertt om nu data_in1 te nemenVerwacht data_out = data_in1
+11 00 1 00
+# 4 verander in0 terwijl select =1 Verwacht data_out = data_in1
+10 00 1 00
+# 5 we verander in1 terwijl select zelfde (=1)  Verwacht data_out = data_in1
+10 11 1 11
+# 6 switchen select Verwacht data_out = data_in0
+10 11 0 10
+# 7 verander in1 terwijl select = 0 geenverandering, Verwacht data_out = data_in0
+10 00 0 10

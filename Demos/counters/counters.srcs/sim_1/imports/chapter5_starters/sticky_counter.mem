@@ -1,0 +1,19 @@
+# Test patterns for sticky_counter.vhd (2-bit woorden)
+# input format: reset cnt_up cnt_dwn data_out
+# NOTE: test vector file for sequential module (no skips)!
+# Reset high, cnt_up = '0' , cnt_dwn = '0' 
+1 0 0 00
+0 0 0 00
+0 1 0 00
+0 1 0 01
+0 1 0 10
+0 1 0 11
+0 1 1 11
+0 0 1 11
+0 0 1 10
+0 0 1 01
+0 0 1 00
+0 1 1 00
+0 1 1 01
+1 1 1 00
+1 1 1 00

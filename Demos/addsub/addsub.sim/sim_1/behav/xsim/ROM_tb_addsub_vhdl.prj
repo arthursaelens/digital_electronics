@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../addsub.srcs/sources_1/imports/digitale-elektronica/digielek-git/digielek/Practicum 1/addsub.vhd" \
+"../../../../addsub.srcs/sources_1/imports/digitale-elektronica/project_2/chapter4/addsub_board.vhd" \
+"../../../../addsub.srcs/sim_1/imports/ROM-testbank/ROM_tb_addsub.vhd" \
+
+# Do not sort compile order
+nosort

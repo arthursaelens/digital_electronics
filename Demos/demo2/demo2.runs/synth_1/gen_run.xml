@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1730935817">
+  <File Type="PA-TCL" Name="display_encoder_board.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="display_encoder_board_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="display_encoder_board_reports.tcl"/>
+  <File Type="RDS-RDS" Name="display_encoder_board.vds"/>
+  <File Type="RDS-UTIL" Name="display_encoder_board_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="display_encoder_board_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="display_encoder_board.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="display_encoder_board_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="display_encoder_board_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Practicum 1/bcdtoseg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Practicum 1/bcdtoseg.vhd"/>
+        <Attr Name="ImportTime" Val="1728566155"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Practicum 1/bintobcd.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Practicum 1/bintobcd.vhd"/>
+        <Attr Name="ImportTime" Val="1729170184"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Practicum 1/display_encoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Practicum 1/display_encoder.vhd"/>
+        <Attr Name="ImportTime" Val="1729259079"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chapter4/display_encoder_board.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../project_2/chapter4/display_encoder_board.vhd"/>
+        <Attr Name="ImportTime" Val="1728559072"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Practicum 1/display_encoder.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Practicum 1/display_encoder.mem"/>
+        <Attr Name="ImportTime" Val="1729281555"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="display_encoder_board"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/digitale-elektronica/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1728567610"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

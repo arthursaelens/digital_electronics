@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../debouncer.srcs/sources_1/imports/chapter5_starters/debounce_control.vhd" \
+"../../../../debouncer.srcs/sources_1/imports/digitale-elektronica/benodigdheden/project4.srcs/sources_1/imports/chapter5_starters/sticky_counter.vhd" \
+"../../../../debouncer.srcs/sources_1/imports/digitale-elektronica/benodigdheden/project4.srcs/sources_1/imports/chapter5_starters/button_pressed.vhd" \
+"../../../../debouncer.srcs/sim_1/imports/testbanken/ROM_tb_button_pressed.vhd" \
+
+# Do not sort compile order
+nosort

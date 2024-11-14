@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../demo3.srcs/sources_1/imports/chapter4/addsub.vhd" \
+"../../../../demo3.srcs/sources_1/imports/Practicum 1/bintobcd.vhd" \
+"../../../../demo3.srcs/sources_1/imports/Practicum 1/bcdtoseg.vhd" \
+"../../../../demo3.srcs/sources_1/imports/Practicum 1/display_encoder.vhd" \
+"../../../../demo3.srcs/sources_1/imports/chapter4/multiple_display_driver.vhd" \
+"../../../../demo3.srcs/sources_1/imports/chapter4/addsub_display.vhd" \
+
+# Do not sort compile order
+nosort

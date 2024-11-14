@@ -1,0 +1,31 @@
+Time resolution is 1 ps
+# Test patterns for display_encoder_board.vhd 
+# signal order: sw an seg
+# NOTE: test vector file for combinational module
+# anodes zijn om geinverteerd 00 zou duiden op anode 3 en 11 zou duiden op anode 0
+# -0
+Test OK for test input: 00100000,  (output seg=1000000, desired output seg=1000000) (output an=0111, desired output an=0111)
+Test OK for test input: 01100000,  (output seg=1000000, desired output seg=1000000) (output an=1111, desired output an=1111)
+Test OK for test input: 10100000,  (output seg=XXXXXXX, desired output seg=XXXXXXX) (output an=1111, desired output an=1111)
+Test OK for test input: 11100000,  (output seg=0111111, desired output seg=0111111) (output an=1110, desired output an=1110)
+# 18
+Test OK for test input: 00010010,  (output seg=0000000, desired output seg=0000000) (output an=0111, desired output an=0111)
+Test OK for test input: 01010010,  (output seg=1001111, desired output seg=1001111) (output an=1011, desired output an=1011)
+Test OK for test input: 10010010,  (output seg=XXXXXXX, desired output seg=XXXXXXX) (output an=1111, desired output an=1111)
+Test OK for test input: 11010010,  (output seg=1000000, desired output seg=1000000) (output an=1111, desired output an=1111)
+# -9
+Test OK for test input: 00101001,  (output seg=0000010, desired output seg=0000010) (output an=0111, desired output an=0111)
+Test OK for test input: 01101001,  (output seg=1000000, desired output seg=1000000) (output an=1111, desired output an=1111)
+Test OK for test input: 10101001,  (output seg=XXXXXXX, desired output seg=XXXXXXX) (output an=1111, desired output an=1111)
+Test OK for test input: 11101001,  (output seg=0111111, desired output seg=0111111) (output an=1110, desired output an=1110)
+# +5
+Test OK for test input: 00000101,  (output seg=0010010, desired output seg=0010010) (output an=0111, desired output an=0111)
+Test OK for test input: 01000101,  (output seg=1000000, desired output seg=1000000) (output an=1111, desired output an=1111)
+Test OK for test input: 10000101,  (output seg=XXXXXXX, desired output seg=XXXXXXX) (output an=1111, desired output an=1111)
+Test OK for test input: 11000101,  (output seg=1000000, desired output seg=1000000) (output an=1111, desired output an=1111)
+
+16 test patterns run, 0 error(s) detected
+
+Failure: This is not a failure: all tests completed
+Time: 460 ns  Iteration: 0  Process: /ROM_tb_display_encoder_project2/line__101  File: C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/sim_1/imports/digielek/ROM_tb_display_encoder_project2.vhd
+$finish called at time : 460 ns : File "C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo2/demo2.srcs/sim_1/imports/digielek/ROM_tb_display_encoder_project2.vhd" Line 121

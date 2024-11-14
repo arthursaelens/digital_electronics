@@ -1,0 +1,77 @@
+# Test patterns for button_pressed.vhd  (using 4 bit internal counter)
+# input format button_pressed: noskip reset button_in button_out
+# equivalent for button_pressed_board: noskip btnC btnU led
+# NOTE: test vector file for sequential module (using skips)!
+# Reset high
+1 1 0 0
+# gwne functionaliteit over- underflow en dan buttonout 1
+# button in 1, 16(want 4 bits) 
+1 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+# overflow detected! nu button_in 0 voor 16
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+1 0 0 0
+# underflow detected! nu button_out 1 en daarna direct 0 hoe dan ook?
+1 0 0 1
+1 0 0 0
+1 0 0 0
+# reset tijdens button_in 1
+1 0 1 0
+1 0 1 0
+1 1 1 0
+1 0 0 0
+1 0 0 0
+# reset na overflow
+# button in 1, 16(want 4 bits) 
+1 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+# overflow detected! nu button_in 0 voor 16
+0 0 0 0
+0 0 0 0
+1 1 0 0
+1 0 0 0
+1 0 0 0
+
+

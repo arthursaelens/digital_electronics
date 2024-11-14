@@ -1,0 +1,49 @@
+Time resolution is 1 ps
+# Test patterns for bcd_counter.vhd (4-bit woorden)
+# input format: reset cnt_up cnt_dwn data_out
+# NOTE: test vector file for sequential module (no skips)!
+# Reset high, cnt_up = '0' , cnt_dwn = '0' 
+Test OK for test input: 1, 0, 0 (output=0000, desired output=0000)
+# Reset low, cnt_up = '1', cnt_dwn = '0' (tellen omhoog)
+Test OK for test input: 0, 1, 0 (output=0000, desired output=0000)
+Test OK for test input: 0, 1, 0 (output=0001, desired output=0001)
+Test OK for test input: 0, 1, 0 (output=0010, desired output=0010)
+Test OK for test input: 0, 1, 0 (output=0011, desired output=0011)
+Test OK for test input: 0, 1, 0 (output=0100, desired output=0100)
+Test OK for test input: 0, 1, 0 (output=0101, desired output=0101)
+Test OK for test input: 0, 1, 0 (output=0110, desired output=0110)
+Test OK for test input: 0, 1, 0 (output=0111, desired output=0111)
+Test OK for test input: 0, 1, 0 (output=1000, desired output=1000)
+Test OK for test input: 0, 1, 0 (output=1001, desired output=1001)
+Test OK for test input: 0, 0, 1 (output=0000, desired output=0000)
+# Reset low, cnt_up = '0', cnt_dwn = '1' (tellen omlaag)
+Test OK for test input: 0, 0, 1 (output=1001, desired output=1001)
+Test OK for test input: 0, 0, 1 (output=1000, desired output=1000)
+Test OK for test input: 0, 0, 1 (output=0111, desired output=0111)
+Test OK for test input: 0, 0, 1 (output=0110, desired output=0110)
+Test OK for test input: 0, 0, 1 (output=0101, desired output=0101)
+Test OK for test input: 0, 0, 1 (output=0100, desired output=0100)
+Test OK for test input: 0, 0, 1 (output=0011, desired output=0011)
+Test OK for test input: 0, 0, 1 (output=0010, desired output=0010)
+Test OK for test input: 0, 0, 1 (output=0001, desired output=0001)
+ERROR for test input: 0, 0, 1 (output=0000, desired output=1001)
+# Reset de teller opnieuw
+ERROR for test input: 1, 0, 0 (output=0000, desired output=1001)
+# Herhaal tellen omhoog om de functionaliteit na reset te controleren
+Test OK for test input: 0, 1, 0 (output=0000, desired output=0000)
+Test OK for test input: 0, 1, 0 (output=0001, desired output=0001)
+Test OK for test input: 0, 1, 0 (output=0010, desired output=0010)
+Test OK for test input: 0, 1, 0 (output=0011, desired output=0011)
+Test OK for test input: 0, 1, 0 (output=0100, desired output=0100)
+Test OK for test input: 0, 1, 0 (output=0101, desired output=0101)
+Test OK for test input: 0, 1, 0 (output=0110, desired output=0110)
+Test OK for test input: 0, 1, 0 (output=0111, desired output=0111)
+Test OK for test input: 0, 1, 0 (output=1000, desired output=1000)
+Test OK for test input: 0, 1, 0 (output=1001, desired output=1001)
+Test OK for test input: 0, 1, 0 (output=0000, desired output=0000)
+
+34 test patterns run, 2 error(s) detected
+
+Failure: This is not a failure: all tests completed
+Time: 820 ns  Iteration: 0  Process: /ROM_tb_bcd/line__99  File: C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/counters/counters.srcs/sim_1/imports/ROM-testbank/ROM_tb_bcd.vhd
+$finish called at time : 820 ns : File "C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/counters/counters.srcs/sim_1/imports/ROM-testbank/ROM_tb_bcd.vhd" Line 119

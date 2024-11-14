@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/debouncer/debouncer.srcs/sources_1/imports/chapter5_starters/debounce_control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'debounce_control'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/debouncer/debouncer.srcs/sources_1/imports/digitale-elektronica/benodigdheden/project4.srcs/sources_1/imports/chapter5_starters/button_pressed.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'button_pressed'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/debouncer/debouncer.srcs/sim_1/imports/testbanken/ROM_tb_button_pressed.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ROM_tb_button_pressed'

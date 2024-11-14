@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo3/demo3.srcs/sources_1/imports/chapter4/addsub.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'addsub'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo3/demo3.srcs/sources_1/imports/Practicum 1/bintobcd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bintobcd'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo3/demo3.srcs/sources_1/imports/Practicum 1/bcdtoseg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bcdtoseg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo3/demo3.srcs/sources_1/imports/Practicum 1/display_encoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'display_encoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo3/demo3.srcs/sources_1/imports/chapter4/multiple_display_driver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multiple_display_driver'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/demo3/demo3.srcs/sources_1/imports/chapter4/addsub_display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'addsub_display'

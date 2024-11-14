@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/mux/mux.srcs/sources_1/imports/Practicum 1/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/mux/mux.srcs/sim_1/imports/digielek/ROM_tb_mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_rom_example'

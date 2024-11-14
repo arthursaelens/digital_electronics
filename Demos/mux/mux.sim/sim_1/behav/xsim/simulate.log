@@ -1,0 +1,26 @@
+Time resolution is 1 ps
+# Test patterns for mux.vhd 
+# USE CASE WITH N=8!!
+# signal order: data_in0 data_in1 select_data data_out
+# NOTE: test vector file for combinational module
+# 00000000 00000001 0 00000000
+# Test 1: Begin met data_in0 geselecteerd, controleer de outputVerwacht data_out = data_in0
+Test OK for test input: 01, 00, 0 (output=01, desired output=01)
+# test 2: verander data_in0 terwijl select_data zelfde (=0)  verwacht data_out = data_in0
+Test OK for test input: 11, 00, 0 (output=11, desired output=11)
+# 3 slect data verandertt om nu data_in1 te nemenVerwacht data_out = data_in1
+Test OK for test input: 11, 00, 1 (output=00, desired output=00)
+# 4 verander in0 terwijl select =1 Verwacht data_out = data_in1
+Test OK for test input: 10, 00, 1 (output=00, desired output=00)
+# 5 we verander in1 terwijl select zelfde (=1)  Verwacht data_out = data_in1
+Test OK for test input: 10, 11, 1 (output=11, desired output=11)
+# 6 switchen select Verwacht data_out = data_in0
+Test OK for test input: 10, 11, 0 (output=10, desired output=10)
+# 7 verander in1 terwijl select = 0 geenverandering, Verwacht data_out = data_in0
+Test OK for test input: 10, 00, 0 (output=10, desired output=10)
+
+7 test patterns run, 0 error(s) detected
+
+Failure: This is not a failure: all tests completed
+Time: 280 ns  Iteration: 0  Process: /tb_rom_example/line__99  File: C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/mux/mux.srcs/sim_1/imports/digielek/ROM_tb_mux.vhd
+$finish called at time : 280 ns : File "C:/Users/arthu/Documents/digitale-elektronica/digielek-git/digielek/Demos/mux/mux.srcs/sim_1/imports/digielek/ROM_tb_mux.vhd" Line 119

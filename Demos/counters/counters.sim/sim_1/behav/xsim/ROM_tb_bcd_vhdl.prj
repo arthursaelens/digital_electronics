@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../counters.srcs/sources_1/imports/chapter5_starters/bcd_counter.vhd" \
+"../../../../counters.srcs/sim_1/imports/ROM-testbank/ROM_tb_bcd.vhd" \
+
+# Do not sort compile order
+nosort
